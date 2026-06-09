@@ -130,4 +130,13 @@ int main()
 
         while (true)
         {
+            cout << "\nmenu" << endl;
+            cout << "1. implement insert operation" << endl;
+            cout << "2. implement inorder traversal" << endl;
+            cout << "3. implement preorder traversal" << endl;
+            cout << "4. implement postorder traversal" << endl;
+            cout << "5. exit" << endl;
+            cout << "\nenter your choice: " << endl;
+
             
+    }
