@@ -31,7 +31,28 @@ class binaryTree
     {
         node *newnode=new node(element, NULL, NULL);
         
+        newnode->info = element;
+        newnode->leftchild = NULL;
+        newnode->rightchild = NULL;
         
+        node *parent= NULL;
+        node *currentNode = NULL;
+       
+        
+        search(element, parent, currentNode);
+        
+        if(parent==NULL)
+        {
+            root=newnode;
+        }
+        else if(element < parent->info)
+        {
+            parent->leftchild = newnode;
+        }
+        else
+        {
+            parent->rightchild = newnode;
+        }
     }
 }   
 
