@@ -17,3 +17,13 @@ class node
         }
 };
 
+class binaryTree
+{
+    public:
+    node *root; //Initially root is null
+    binaryTree()
+    {
+        root=NULL;
+    }
+
+    
