@@ -9,4 +9,11 @@ class node
         node *leftchild;
         node *rightchild;
         //construotor for node class
-        
+        node(string i, node *l=NULL, node *r)
+        {
+            info=i;
+            leftchild=l;
+            rightchild=r;
+        }
+};
+
